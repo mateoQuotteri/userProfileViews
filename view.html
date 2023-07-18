@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Sofia+Sans+Semi+Condensed:ital,wght@1,300&display=swap" rel="stylesheet">
+<!---FONT AWESOME-->
+<script src="https://kit.fontawesome.com/daf902b596.js" crossorigin="anonymous"></script>
+<!---BOOSTRAP CSS-->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+<!---BOOSTRAP JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<!--GOOGLE ICONS-->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+    <link rel="stylesheet" href="./styles/colors.css"> 
+    <link rel="stylesheet" href="./styles/header2.css">
+    <link rel="stylesheet" href="./styles/aviso.css">
+    <link rel="stylesheet" href="./styles/userProfile.css">
+    <title>Mi perfil</title>
+</head>
+<body class="background-blue">
+    <div class="loading" id="loading">
+        <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <header class="hidden" id="header">
+        <!--INICIO DEL HEADER -->
+        <section class="button-of-header-container">
+         <a class="background-orange"href="https://rebolucion-production.up.railway.app">
+            <button class="background-orange white">
+                ←
+            </button>
+         </a>
+        </section>
+    <!--FIN DEL HEADER-->
+    </header>
+    <main class="hidden" id="main">
+        
+    <section>
+
+        <div>
+            <h1 class="white">Mi perfil</h1>
+        </div>
+
+        <section class="principal-section">
+            
+              <div class="false-box background-light-color-box-from-behind">
+                <div class="background-light-color  div-inside">
+
+                    <div class="icon-container">
+                        <div class="icon">
+                            <i class=" orange fa-solid fa-user"></i>
+                        </div>
+                    </div>
+
+                    <div class="name-container">
+                        <h3 class="white">¡Hola, Mateo!</h3>
+                    </div>
+                      <label class="white"for="">Nombre:</label>
+                    <input type="text" readonly value="<%= Mateo  %>">
+
+                    <label class="white"for="">Apellido:</label>
+                    <input type="text" readonly value="<%= Quotteri  %>">
+
+                    <label class="white"for="">Email:</label>
+                    <input type="text" readonly value="<%= quotterimateo@gmail.com  %>">
+
+                    <label class="white"for="">Celular:</label>
+                    <input type="text" readonly value="<%= 11-39569894  %>">
+
+                    <label class="white"for="">País:</label>
+                    <input type="text" readonly value="<%= Argentina  %>">
+
+                    <label class="white"for="">Estado o Provincia:</label>
+                    <input type="text" readonly value="<%= Buenos Aires  %>">
+                    
+                    <label class="white"for="">Ciudad:</label>
+                    <input type="text" readonly value="<%= Lanus oeste  %>">
+
+
+                    <div class="container-ofButtons" class="">
+                        <a href="https://rebolucion-production.up.railway.app/user/my-profile/edit"> 
+                            <button class="background-orange white">Editar datos</button>
+                        </a>
+
+                        <a  href="https://rebolucion-production.up.railway.app/user/my-profile/edit/my-password" >
+                            <button class="background-orange white">Cambiar contraseña</button>
+                        </a>
+                    </div>
+
+                    <form action="/user/my-profile?_method=DELETE" method="POST"  
+                    enctype="">
+                        <button  class="background-orange" type="submit">
+                            <i class="fa-solid fa-right-from-bracket white"></i>
+                        </button>
+                    </form>
+                </div>
+              </div>
+            
+        </section>
+ 
+</section>
+</main>
+</body>
+
+
+</html>
